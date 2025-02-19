@@ -2,7 +2,7 @@
 
 **MinSDK**: 28
 
-**Current version:** 0.10.0
+**Current version:** 0.11.0
 
 **Previous released versions:** [0.9.0, 0.9.1, 0.9.2]
 
@@ -62,16 +62,20 @@ Available HostTypes : `[NATIVE, FLUTTER, REACT_NATIVE, IONIC, OTHER]`
 <br/>
 <br/>
 
-`fun register(
+```kotlin
+    fun register(
         organisationId: String,
         userId: String,
         deviceId: String,
         name: String,
         email: String,
         region: Region,
-    )`
+        hubLayout: HubLayout
+    )
+```
 
-Registers user to be available in fullview
+Registers user to be available in fullview.
+Available HubLayouts: `[LOCKED_FULLSCREEN, FULLSCREEN, DEFAULT]`
 
 <br/>
 <br/>
